@@ -6,5 +6,5 @@ connectDB();
 
 
 app.listen(process.env.PORT, ()=>{
-    console.log("server is listning on port 4000");
+    console.log(`Server is listning on port: ${process.env.PORT} in ${process.env.NODE_ENV} mode`);
 })
