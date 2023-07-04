@@ -23,6 +23,8 @@ app.use(express.json());
 // custom url 
 app.use("/api/v1/users" ,userRouter);
 app.use("/api/v1/task" ,taskRouter);
-
+app.get("/" , (req , res)=>{
+    res.send("Home page");
+})
 //using error middleware
 app.use(errorMiddleware);
